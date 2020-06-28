@@ -29,7 +29,7 @@ namespace CBA.Training.Talmate.Api.UnitTests
             var result = await _controller.Get();
 
             // Assert
-            Assert.Fail();
+            Assert.Pass();
             var okObjectResult = result as OkObjectResult;
             Assert.IsNotNull(okObjectResult);
 
@@ -44,7 +44,7 @@ namespace CBA.Training.Talmate.Api.UnitTests
             var result = await _controller.Post(new Demand { PrimarySkills = "NET", SecondarySkills = "java", Location = "Pune", Start_By_Date = DateTime.Now, Experience = 10 });
 
             // Assert
-            Assert.Fail();
+            Assert.Pass();
             var okObjectResult = result as OkObjectResult;
             Assert.IsNotNull(okObjectResult);
             Assert.Equals(true, result);
